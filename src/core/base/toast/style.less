@@ -1,0 +1,54 @@
+@import "../../../styles/const.less";
+
+.message-toast {
+    position:fixed;
+    left:@left-panel-width;
+    top:-@toast-height;
+    width:calc(100% - @left-panel-width);
+    height:auto;
+    text-align: center;
+    transition:top 50ms linear;
+    pointer-events:none;
+    z-index:99999999;
+}
+
+.message-toast.show {
+    top:0;
+    transition:top 50ms linear;
+}
+
+.message-toast-wrapper {
+    display:inline-block;
+    width:auto;
+    line-height:@toast-height;
+    padding:0 15px;
+    font-size:14px;
+}
+
+.message-toast-wrapper i {
+    font-size:15px;
+}
+
+.message-toast-wrapper.normal
+{
+    color: @main-color;
+    background-color:@main-light-color;
+}
+
+.message-toast-wrapper.info
+{
+    color:@green-color;
+    background-color:@green-light-color;
+}
+
+.message-toast-wrapper.warn
+{
+    color:@red-color;
+    background-color:@red-light-color;
+}
+
+.message-toast-wrapper.notice
+{
+    color:@yellow-color;
+    background-color:@yellow-light-color;
+}

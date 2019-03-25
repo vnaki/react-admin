@@ -1,0 +1,44 @@
+.scrollbar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  overflow: hidden;
+}
+.scrollbar-container {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.scrollbar-container::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-track {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  user-select: none;
+  z-index: 1000;
+}
+.scrollbar-track.fadeIn {
+  opacity: 100;
+  transition: opacity 200ms linear;
+}
+.scrollbar-track.fadeOut {
+  opacity: 0;
+  transition: opacity 200ms linear;
+}
+.scrollbar-thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  cursor: default;
+  border-radius: 20px;
+  background-color: #CCC;
+}
+/*# sourceMappingURL=scrollbar.css.map */

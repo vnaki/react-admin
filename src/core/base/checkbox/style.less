@@ -1,0 +1,47 @@
+@import "../../../styles/const.less";
+
+.form-checkbox {
+    width: auto;
+    height: auto;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    line-height:22px;
+    position: relative;
+    display: inline-block;
+    //vertical-align: top;
+    user-select: none;
+    cursor: pointer;
+}
+.form-checkbox [type=checkbox] {
+    display: none;
+}
+.form-checkbox span {
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+    text-align: center;
+    padding: 2px;
+    font-size:12px;
+    text-indent:0;
+    border:solid 2px @form-checkbox-border;
+    transition: all 100ms;
+}
+.form-checkbox.checked span {
+    color: @form-checkbox-checked-color;
+    border-color: @form-checkbox-checked;
+    background-color: @form-checkbox-checked;
+    transition: all 100ms;
+}
+.form-checkbox.checked span i:before {
+    content : "\f00c"
+}
+.form-checkbox .checkbox-title {
+    color :@form-checkbox-color;
+    font-size: 15px;
+    margin-left:8px;
+    margin-right:8px;
+}
+.form-checkbox span{
+    display: inline-block;
+    vertical-align: top;
+}

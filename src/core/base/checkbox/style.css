@@ -1,0 +1,67 @@
+/*主色值*/
+/*青色*/
+/*头部高度*/
+/*左侧面板宽度*/
+/*左侧面板背景*/
+/*左侧面板背景*/
+/*左侧菜单高度*/
+/*左侧菜单标题高度*/
+/*内容区背景色*/
+/*子导航宽度*/
+/*表单默认高度*/
+/*数据列表高度*/
+/*表单默认边色*/
+/*表单聚焦边色*/
+/*提示高度*/
+/*select 样式*/
+/*表单样式常量*/
+/*checkbox*/
+/*边框阴影*/
+.border-shadow {
+  box-shadow: 0 0 0 3px #F3F5FE;
+}
+.form-checkbox {
+  width: auto;
+  height: auto;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  line-height: 22px;
+  position: relative;
+  display: inline-block;
+  user-select: none;
+  cursor: pointer;
+}
+.form-checkbox [type=checkbox] {
+  display: none;
+}
+.form-checkbox span {
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+  text-align: center;
+  padding: 2px;
+  font-size: 12px;
+  text-indent: 0;
+  border: solid 2px #DDD;
+  transition: all 100ms;
+}
+.form-checkbox.checked span {
+  color: #FFF;
+  border-color: #708cef;
+  background-color: #708cef;
+  transition: all 100ms;
+}
+.form-checkbox.checked span i:before {
+  content: "\f00c";
+}
+.form-checkbox .checkbox-title {
+  color: #555;
+  font-size: 15px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.form-checkbox span {
+  display: inline-block;
+  vertical-align: top;
+}
+/*# sourceMappingURL=style.css.map */

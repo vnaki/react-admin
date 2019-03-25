@@ -1,0 +1,41 @@
+/*主色值*/
+/*青色*/
+/*头部高度*/
+/*左侧面板宽度*/
+/*左侧面板背景*/
+/*左侧面板背景*/
+/*左侧菜单高度*/
+/*左侧菜单标题高度*/
+/*内容区背景色*/
+/*子导航宽度*/
+/*表单默认高度*/
+/*数据列表高度*/
+/*表单默认边色*/
+/*表单聚焦边色*/
+/*提示高度*/
+/*select 样式*/
+/*表单样式常量*/
+/*checkbox*/
+/*边框阴影*/
+.border-shadow {
+  box-shadow: 0 0 0 3px #F3F5FE;
+}
+.input-search {
+  width: 100%;
+  height: auto;
+  line-height: 32px;
+  display: inline;
+}
+.input-search label {
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.input-search {
+  margin-right: 0 !important;
+}
+.input-search .input {
+  width: 100px;
+}
+/*# sourceMappingURL=style.css.map */

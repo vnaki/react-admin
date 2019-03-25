@@ -1,0 +1,97 @@
+/*主色值*/
+/*青色*/
+/*头部高度*/
+/*左侧面板宽度*/
+/*左侧面板背景*/
+/*左侧面板背景*/
+/*左侧菜单高度*/
+/*左侧菜单标题高度*/
+/*内容区背景色*/
+/*子导航宽度*/
+/*表单默认高度*/
+/*数据列表高度*/
+/*表单默认边色*/
+/*表单聚焦边色*/
+/*提示高度*/
+/*select 样式*/
+/*表单样式常量*/
+/*checkbox*/
+/*边框阴影*/
+.border-shadow {
+  box-shadow: 0 0 0 3px #F3F5FE;
+}
+.form-select {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100px;
+  height: 32px;
+  position: relative;
+}
+.form-select-wrapper {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  font-weight: normal;
+}
+.form-select-input {
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  text-indent: 5px;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  box-sizing: border-box;
+  border: solid 1px #E5E5E5;
+}
+.form-select:hover .form-select-input {
+  border-color: #d6d6fc;
+  transition: border-color 100ms;
+}
+.form-select-input.cursor {
+  cursor: default;
+}
+.form-select-options {
+  width: 100%;
+  min-height: 32px;
+  max-height: 150px;
+  margin-top: 3px;
+  overflow-y: auto;
+  box-sizing: border-box;
+  box-shadow: 0 0 1px #708cef;
+  background-color: #FFF;
+  /*默认不显示*/
+  display: none;
+}
+.form-select-options.focus {
+  display: block;
+}
+.form-select-option,
+.form-select-empty {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 5px;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+.form-select-option {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.form-select-option:hover,
+.form-select-option.selected {
+  color: #708cef;
+  cursor: pointer;
+}
+.form-select-option.selected {
+  background-color: #d6d6fc;
+}
+.form-select-empty {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

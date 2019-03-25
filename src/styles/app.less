@@ -1,0 +1,32 @@
+@import "fonts/font.css";
+@import "scrollbar.css";
+@import "base.less";
+@import "form.less";
+
+/*左侧面板*/
+.left-panel {
+    &:extend(.flex-shrink-forbid);
+    width:@left-panel-width;
+    height:100%;
+    background-color:@left-panel-background;
+}
+.left-panel.hidden {
+    width:0 !important;
+    overflow:hidden;
+    transition:width 100ms;
+}
+/*右侧面板*/
+.right-panel {
+    height:100%;
+    &:extend(.flex-grow);
+    &:extend(.flex-shrink-forbid);
+}
+/*右侧内容*/
+.content {
+    &:extend(.flex-grow);
+    &:extend(.flex-shrink-forbid);
+    height:0;
+    width:100%;
+    background-color:@content-background;
+    position:relative;
+}

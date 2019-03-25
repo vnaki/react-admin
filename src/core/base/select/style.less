@@ -1,0 +1,91 @@
+@import "../../../styles/const.less";
+
+.form-select {
+    display:inline-block;
+    vertical-align:middle;
+
+    width:@select-width;
+    height:@input-height;
+
+    position:relative;
+}
+
+.form-select-wrapper {
+    width:100%;
+    height:auto;
+
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:9999;
+
+    font-weight:normal;
+}
+
+.form-select-input {
+    width:100%;
+    height:@input-height;
+    line-height:@input-height;
+    text-indent:5px;
+    color:inherit;
+    font-size:inherit;
+    font-weight:inherit;
+    box-sizing:border-box;
+    border:solid 1px @border-color;
+}
+
+.form-select:hover .form-select-input {
+    border-color:@border-focus-color;
+    transition:border-color 100ms;
+}
+
+.form-select-input.cursor {
+    cursor:default;
+}
+
+.form-select-options {
+    width:100%;
+    min-height:@input-height;
+    max-height:150px;
+    margin-top:3px;
+    overflow-y:auto;
+
+    box-sizing:border-box;
+    box-shadow:0 0 1px @main-color;
+    background-color:#FFF;
+
+    /*默认不显示*/
+    display:none;
+}
+
+.form-select-options.focus {
+    display:block;
+}
+
+.form-select-option, .form-select-empty {
+    height:30px;
+    line-height:30px;
+    padding: 0 5px;
+    color:inherit;
+    font-size:inherit;
+    font-weight:inherit;
+}
+
+.form-select-option {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow:hidden;
+}
+
+.form-select-option:hover, .form-select-option.selected {
+    color:@main-color;
+    cursor:pointer;
+}
+
+.form-select-option.selected {
+    background-color:@main-middle-color;
+}
+
+.form-select-empty {
+    text-align:center;
+}

@@ -1,0 +1,99 @@
+/*主色值*/
+/*头部高度*/
+/*左侧面板宽度*/
+/*左侧面板背景*/
+/*左侧面板背景*/
+/*左侧菜单高度*/
+/*内容区背景色*/
+/*_select 样式*/
+/*表单样式常量*/
+/*checkbox*/
+/*按钮*/
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  color: #FFF;
+  border: none;
+  border-radius: 3px;
+}
+.btn:active {
+  opacity: 0.9;
+}
+/*小尺寸按钮*/
+.btn-mini {
+  padding: 4px 5px;
+  font-size: 12px;
+}
+/*中尺寸按钮*/
+.btn-middle {
+  padding: 6px 7px;
+  font-size: 14px;
+}
+/*大尺寸按钮*/
+.btn-large {
+  padding: 10px;
+  font-size: 16px;
+}
+/*禁止按钮*/
+.btn-disable {
+  cursor: not-allowed;
+  background-color: #CCC;
+}
+/*重置激活样式*/
+.btn-disable:active {
+  opacity: 1;
+}
+/*按钮编辑颜色*/
+.btn-normal {
+  background-color: #8330BE;
+}
+/*按钮删除颜色*/
+.btn-delete {
+  background-color: #F55;
+}
+/*按钮绿颜色*/
+.btn-edit {
+  background-color: #5FB878;
+}
+/*Form表单*/
+.textarea,
+.input {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  font-size: 14px;
+  color: #555;
+  border: solid 1px #DDD;
+}
+/*被禁用*/
+.textarea[disabled],
+.input[disabled] {
+  background-color: #F2F2F2;
+}
+.textarea {
+  height: 80px;
+  line-height: 20px;
+  padding: 2px;
+  overflow: auto;
+}
+/*表单*/
+.input {
+  height: 32px;
+  line-height: 32px;
+  text-indent: 5px;
+}
+.textarea:focus,
+.input:focus {
+  border-color: #F99;
+}
+/*表单名称*/
+.input-title {
+  display: block;
+  line-height: 46px;
+  font-size: 14px;
+  color: #444;
+}
+/*# sourceMappingURL=form.css.map */

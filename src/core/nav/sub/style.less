@@ -1,0 +1,30 @@
+@import "../../../styles/const.less";
+
+.sub {
+    width:@sub-width;
+    height:100%;
+    background:#FFF;
+}
+
+.sub-item {
+    display:block;
+    width:100%;
+    text-align:center;
+    line-height:40px;
+    font-size:12px;
+    color:#555;
+    cursor:pointer;
+}
+
+.sub-item:hover {
+    background-color:#F5F5F5;
+}
+
+.sub-item.active {
+    color:@main-color;
+    background-color:#F5F5F5;
+}
+
+.sub-item:first-child {
+    margin-top:15px;
+}

@@ -1,0 +1,141 @@
+@import "./const.less";
+
+/*按钮*/
+.btn {
+    display: inline;
+    width:auto;
+    height:auto;
+    cursor:pointer;
+    color: #FFF;
+    border:none;
+    border-radius:3px;
+    box-sizing: border-box;
+}
+
+.btn:active {
+    opacity: 0.9;
+    &:extend(.border-shadow);
+}
+
+/*小尺寸按钮*/
+.btn-mini {
+    padding:4px;
+    font-size:12px;
+}
+
+/*中尺寸按钮*/
+.btn-middle {
+    padding:6px 7px;
+    font-size:13px;
+}
+
+/*大尺寸按钮*/
+.btn-large {
+    padding:10px 12px;
+    font-size:14px;
+}
+
+/*禁止按钮*/
+.btn-disable {
+    cursor:not-allowed;
+    background-color: #CCC;
+}
+
+/*重置激活样式*/
+.btn-disable:active {
+    opacity:1;
+}
+
+.btn-group {
+  line-height: @input-height + 10;
+  padding:10px 0;
+}
+
+.btn-group .btn {
+    margin-left:5px;
+}
+
+/*主色*/
+.btn-normal{background-color:@main-color;};
+/*红色*/
+.btn-delete{background-color:#F55;}
+/*绿色*/
+.btn-edit{background-color:#5FB878;}
+/*黑色*/
+.btn-black{background-color:#333;}
+
+/*Form表单*/
+.upload-input {
+    width: 200px;
+    cursor:default;
+}
+.upload-item {
+    display:inline-block;
+    vertical-align:top;
+    margin-right:5px;
+}
+
+.uploading {
+    font-size:13px;
+    line-height:@input-height;
+}
+
+.upload-input, .textarea, .input {
+    display:inline-block;
+    vertical-align:top;
+    font-size:12px;
+    color:#555;
+    box-sizing:border-box;
+    border:solid 1px @border-color;
+}
+
+.textarea, .input {
+    width:100%;
+}
+
+/*被禁用*/
+.textarea[disabled], .input[disabled] {
+    background-color:#F2F2F2;
+}
+
+.textarea {
+    height:80px;
+    line-height:20px;
+    padding:2px;
+    overflow:auto;
+}
+
+/*表单*/
+.input, .upload-input {
+    height:@input-height;
+    line-height:@input-height;
+    text-indent:5px;
+}
+
+/*表单激活效果*/
+.textarea:focus, .input:focus {
+    border-color: @border-focus-color;
+    transition:border-color 100ms;
+    &:extend(.border-shadow);
+}
+
+/*表单名称*/
+.input-title {
+    display:block;
+    line-height:50px;
+    font-size:13px;
+    color:#555;
+}
+
+.upload {
+    position:relative;
+    overflow:hidden;
+}
+.upload [type=file] {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    visibility:hidden;
+}

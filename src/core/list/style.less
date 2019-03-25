@@ -1,0 +1,78 @@
+@import "../../styles/const.less";
+
+.list {
+    display:block;
+    width: 100%;
+    height:auto;
+    overflow-x:auto;
+    overflow-y:hidden;
+}
+
+.list-header {
+    background-color:#F5F5F5;
+    height:@list-height;
+}
+
+.list-header, .list-body {
+    display:table;
+    width:inherit;
+}
+
+.list-body {
+    max-height:300px;
+    overflow: auto;
+}
+
+.list-row {
+    display:table-row;
+    width:inherit;
+    height:@list-height;
+    padding:7px 0;
+}
+
+.list-row:nth-child(even) {
+    background-color:#F5F5F5;
+}
+
+.list-cell {
+    width:50px;/*默认最小宽度*/
+    text-indent:5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow:hidden;
+}
+
+.list-more, .list-empty {
+    width:100%;
+    text-align:center;
+}
+
+.list-more {
+    cursor:pointer;
+    text-decoration:underline;
+}
+
+.list-more, .list-empty, .list-cell {
+    display:table-cell;
+    height:@list-height;
+    line-height:@list-height;
+    font-size:12px;
+    user-select: text;
+}
+
+.list-image {
+    width:@list-height;
+    height:@list-height;
+    border:solid 1px transparent;
+    box-sizing:border-box;
+    overflow:hidden;
+}
+
+.list-link {
+    font-size:inherit;
+}
+
+.list-link .a {
+    cursor:pointer;
+    color: @main-color;
+}

@@ -1,0 +1,84 @@
+@import "const.less";
+
+*{padding:0;margin:0;font-family:Helvetica,Arial,"Hiragino Sans GB","Microsoft Yahei","微软雅黑",STHeiti,"华文细黑",sans-serif;color:#333;}
+.fa, .fab, .fal, .far, .fas {display:inline;}
+a{text-decoration:none;color:inherit;font-size:inherit;}
+i{font-style:normal;color:inherit;}
+h1,h2,h3{font-style:normal;}
+html{width:100%;height:100%;user-select:none;}
+body,#root,.container{width:inherit;height:inherit;position:relative;overflow:hidden;}
+input,select,textarea,button {outline:none;}
+img {display:block;}
+[tabindex] {outline:none;}
+form {font-size:13px;display:inline;}
+.icon-before {margin-right:5px;}
+
+/*Flex布局*/
+.flex {
+    display:flex;
+}
+
+.flex-horizontal {
+    justify-content:flex-start;
+    flex-direction:row;
+}
+
+.flex-vertical {
+    align-items:flex-start;
+    flex-direction:column;
+}
+
+.flex-grow {
+    flex-grow:1;
+}
+
+.flex-grow-forbid {
+    flex-grow:0;
+}
+
+.flex-shrink {
+    flex-shrink:1;
+}
+
+.flex-shrink-forbid {
+    flex-shrink:0;
+}
+
+/*水平布局*/
+[direction=horizontal] {
+    &:extend(.flex);
+    &:extend(.flex-horizontal);
+}
+
+/*垂直布局*/
+[direction=vertical] {
+    &:extend(.flex);
+    &:extend(.flex-vertical);
+}
+
+.margin{
+    margin:15px;
+}
+
+.padding{
+    padding:15px;
+    background-color:#FFF;
+}
+
+/*面板容器*/
+.panel {
+    margin:15px 7px 7px 7px;
+    &:extend(.flex-grow);
+    background-color:#FFF;
+}
+.panel:first-child {
+    margin-left:15px;
+}
+.panel:last-child {
+    margin-right:15px;
+}
+
+/*Full Height*/
+.full-height {
+    height:100%;
+}
